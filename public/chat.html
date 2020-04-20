@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="chat.css" />
+    <title>DUMBCHARADES</title>
+  </head>
+  <body>
+    <div class="chat-container">
+      <header class="chat-header">
+        <h1></i>DUMBCHARADES</h1>
+        <a href="index.html" class="btn">LEAVE GAME</a>
+      </header>
+       <main class="chat-main">
+        <div class="chat-sidebar">
+          <h4></i>Room</h4>
+          <h2 id="room-name"></h2>
+         
+          <h4></i> Players</h4>
+          <ul id="users"></ul>
+       <br>
+       <h4></i>ScoreBoard</h4>
+          <div id="mark-display">
+            <p>0</p>
+          </div>
+        </div>
+        <div class="chat-background">
+          <br>
+<br>
+  <video id="localVideo" autoplay muted></video>
+  <video id="remoteVideo" autoplay muted></video>
+  
+  <div id="word-display">
+</div>
+<div id="chat-button">
+</div>
+ <div id="timer-display">
+</div>
+
+</div>
+
+   
+ <div class="chat-messages"></div>
+          </main>
+      <div class="chat-form-container">
+        <form id="chat-form">
+          <input
+            id="msg"
+            type="text"
+            placeholder="Enter Message"
+            required
+            autocomplete="off"
+          />
+         <div id="send_button">
+</div>
+        </form>
+      </div>
+    </div>
+ <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+      integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
+      crossorigin="anonymous"
+    ></script>
+<script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="js/one.js"></script> 
+</body>
+</html>
